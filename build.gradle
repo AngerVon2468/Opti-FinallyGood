@@ -41,7 +41,9 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    modImplementation "curse.maven:irisshaders-455508:5095005"
+    /*
+    modImplementation "curse.maven:irisshaders-455508:5095005" // This is commented out due to issues with the sodium stub not being detected.
+    */
     include "curse.maven:irisshaders-455508:5095005"
 
     modImplementation "curse.maven:continuity-531351:5344958"
@@ -64,7 +66,6 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    include "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
