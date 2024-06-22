@@ -24,14 +24,6 @@ repositories {
             includeGroup "curse.maven"
         }
     }
-    exclusiveContent {
-        forRepository {
-            maven { url = "https://api.modrinth.com/maven" }
-        }
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
     maven { url "https://maven.blamejared.com" }
 }
 
@@ -70,7 +62,16 @@ dependencies {
     modImplementation "curse.maven:modmenu-308702:5162837"
     include "curse.maven:modmenu-308702:5162837"
 
-    // 'optional' extras, will make two releases based on if these mods are wanted or not. (Only optional mods should be implemented below this point).
+    modImplementation "curse.maven:zoomify-574741:5439658"
+    include "curse.maven:zoomify-574741:5439658"
+
+    modImplementation "curse.maven:yacl-667299:5424129"
+    include "curse.maven:yacl-667299:5424129"
+
+    modImplementation "curse.maven:fabric-language-kotlin-308769:5361341"
+    include "curse.maven:fabric-language-kotlin-308769:5361341"
+
+    // Mods less for performance, more for QOL
     modImplementation "curse.maven:better-third-person-435044:4596636"
     include "curse.maven:better-third-person-435044:4596636"
 
@@ -89,8 +90,20 @@ dependencies {
     modImplementation "curse.maven:chat-heads-407206:5423056"
     include "curse.maven:chat-heads-407206:5423056"
 
+    modImplementation "curse.maven:pick-up-notifier-351441:4613539"
+    include "curse.maven:pick-up-notifier-351441:4613539"
+
+    modImplementation "curse.maven:puzzles-lib-495476:5373245"
+    include "curse.maven:puzzles-lib-495476:5373245"
+
     modImplementation "curse.maven:searchables-858542:5284014"
     include "curse.maven:searchables-858542:5284014"
+
+    modImplementation "curse.maven:mouse-tweaks-60089:5230279"
+    include "curse.maven:mouse-tweaks-60089:5230279"
+
+    modImplementation "curse.maven:forge-config-api-port-fabric-547434:4583000"
+    include "curse.maven:forge-config-api-port-fabric-547434:4583000"
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
