@@ -62,14 +62,14 @@ dependencies {
     modImplementation "curse.maven:modmenu-308702:5162837"
     include "curse.maven:modmenu-308702:5162837"
 
-    modImplementation "curse.maven:zoomify-574741:5439658"
-    include "curse.maven:zoomify-574741:5439658"
-
-    modImplementation "curse.maven:yacl-667299:5424129"
-    include "curse.maven:yacl-667299:5424129"
-
     modImplementation "curse.maven:fabric-language-kotlin-308769:5361341"
     include "curse.maven:fabric-language-kotlin-308769:5361341"
+
+    modImplementation "curse.maven:just-zoom-561885:5402651"
+    include "curse.maven:just-zoom-561885:5402651"
+
+    modImplementation "curse.maven:konkrete-fabric-416797:5142502"
+    include "curse.maven:konkrete-fabric-416797:5142502"
 
     // Mods less for performance, more for QOL
     modImplementation "curse.maven:better-third-person-435044:4596636"
