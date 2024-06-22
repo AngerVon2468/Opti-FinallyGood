@@ -41,8 +41,8 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    modImplementation "curse.maven:irisshaders-455508:4861712"
-    include "curse.maven:irisshaders-455508:4861712"
+    modImplementation "curse.maven:irisshaders-455508:5095005"
+    include "curse.maven:irisshaders-455508:5095005"
 
     modImplementation "curse.maven:continuity-531351:5344958"
     include "curse.maven:continuity-531351:5344958"
