@@ -49,6 +49,12 @@ dependencies {
     modImplementation "curse.maven:entity-texture-features-fabric-568563:5427048"
     include "curse.maven:entity-texture-features-fabric-568563:5427048"
 
+    modImplementation "curse.maven:custom-entity-models-cem-477078:4591507"
+    include "curse.maven:custom-entity-models-cem-477078:4591507"
+
+    modImplementation "curse.maven:entity-model-features-844662:5304274"
+    include "curse.maven:entity-model-features-844662:5304274"
+
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }

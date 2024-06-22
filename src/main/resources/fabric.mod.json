@@ -3,16 +3,20 @@
     "id": "opti-finallygood",
     "version": "${version}",
     "name": "Opti-FinallyGood",
-    "description": "",
+    "description": "Optifine replacement, mods to replace it are bundled into one for ease of use.",
     "authors": [
         "My hatred for OptiFine :)"
     ],
+    "contributors": [
+        "All the people who made these mods"
+    ],
     "contact": {
+        "email": "epicvon2468@gmail.com",
         "homepage": "https://github.com/AngerVon2468/Opti-FinallyGood",
         "issues": "https://github.com/AngerVon2468/Opti-FinallyGood/issues",
         "sources": "https://github.com/AngerVon2468/Opti-FinallyGood"
     },
-    "license": "",
+    "license": "Do-whatever-you-want-as-long-as-it-respects-the-original-mod-licenses",
     "icon": "assets/opti-finallygood/icon.png",
     "environment": "*",
     "entrypoints": {
