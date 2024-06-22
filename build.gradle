@@ -83,9 +83,6 @@ dependencies {
     modImplementation "curse.maven:jei-238222:5419573"
     include "curse.maven:jei-238222:5419573"
 
-    modImplementation "curse.maven:appleskin-248787:4770825"
-    include "curse.maven:appleskin-248787:4770825"
-
     modImplementation "curse.maven:controlling-250398:4646681"
     include "curse.maven:controlling-250398:4646681"
 
@@ -127,7 +124,7 @@ tasks.withType(JavaCompile).configureEach {
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     if (JavaVersion.current() < javaVersion) {
-        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+        throw new RuntimeException("Opti-FinallyGood needs Java 17 or above. Current Java version is " + JavaVersion.current())
     }
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
     // if it is present.
