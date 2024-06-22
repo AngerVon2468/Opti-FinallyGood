@@ -32,6 +32,7 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
+    maven { url "https://maven.blamejared.com" }
 }
 
 dependencies {
@@ -40,17 +41,11 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    modImplementation "curse.maven:embeddium-908741:5456713"
-    include "curse.maven:embeddium-908741:5456713"
-
-    modImplementation "curse.maven:irisshaders-455508:5425378"
-    include "curse.maven:irisshaders-455508:5425378"
+    modImplementation "curse.maven:irisshaders-455508:4861712"
+    include "curse.maven:irisshaders-455508:4861712"
 
     modImplementation "curse.maven:continuity-531351:5344958"
     include "curse.maven:continuity-531351:5344958"
-
-    modImplementation "curse.maven:indium-459496:5436380"
-    include "curse.maven:indium-459496:5436380"
 
     modImplementation "curse.maven:entity-texture-features-fabric-568563:5427048"
     include "curse.maven:entity-texture-features-fabric-568563:5427048"
@@ -60,6 +55,9 @@ dependencies {
 
     modImplementation "maven.modrinth:entityculling:1.6.6"
     include "maven.modrinth:entityculling:1.6.6"
+
+    modImplementation "org.embeddedt:embeddium-fabric-1.20.1:0.3.21-git-a4a009a+mc1.20.1"
+    include "org.embeddedt:embeddium-fabric-1.20.1:0.3.21-git-a4a009a+mc1.20.1"
 
     modImplementation "curse.maven:modmenu-308702:5162837"
     include "curse.maven:modmenu-308702:5162837"
@@ -71,14 +69,14 @@ dependencies {
 
 processResources {
     inputs.property "version", project.version
-    inputs.property "minecraft_version", project.minecraft_version
-    inputs.property "loader_version", project.loader_version
+    inputs.property "minecraft_version", minecraft_version
+    inputs.property "loader_version", loader_version
     filteringCharset "UTF-8"
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
-                "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+                "minecraft_version": minecraft_version,
+                "loader_version": loader_version
     }
 }
 
