@@ -18,12 +18,18 @@ repositories {
     // for more information about repositories.
     exclusiveContent {
         forRepository {
-            maven {
-                url "https://cursemaven.com"
-            }
+            maven { url "https://cursemaven.com" }
         }
         filter {
             includeGroup "curse.maven"
+        }
+    }
+    exclusiveContent {
+        forRepository {
+            maven { url = "https://api.modrinth.com/maven" }
+        }
+        filter {
+            includeGroup "maven.modrinth"
         }
     }
 }
@@ -49,14 +55,18 @@ dependencies {
     modImplementation "curse.maven:entity-texture-features-fabric-568563:5427048"
     include "curse.maven:entity-texture-features-fabric-568563:5427048"
 
-    modImplementation "curse.maven:custom-entity-models-cem-477078:4591507"
-    include "curse.maven:custom-entity-models-cem-477078:4591507"
-
     modImplementation "curse.maven:entity-model-features-844662:5304274"
     include "curse.maven:entity-model-features-844662:5304274"
 
+    modImplementation "maven.modrinth:entityculling:1.6.6"
+    include "maven.modrinth:entityculling:1.6.6"
+
+    modImplementation "curse.maven:modmenu-308702:5162837"
+    include "curse.maven:modmenu-308702:5162837"
+
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    include "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
