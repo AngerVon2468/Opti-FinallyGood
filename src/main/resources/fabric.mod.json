@@ -22,9 +22,6 @@
     "entrypoints": {
         "client": [
             "wiiu.mavity.optifinallygood.Opti_FinallyGoodClient"
-        ],
-        "main": [
-            "wiiu.mavity.optifinallygood.Opti_FinallyGood"
         ]
     },
     "mixins": [
