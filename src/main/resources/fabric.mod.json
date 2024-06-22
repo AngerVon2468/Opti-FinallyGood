@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "opti-finallygood",
+    "version": "${version}",
+    "name": "Opti-FinallyGood",
+    "description": "",
+    "authors": [
+        "My hatred for OptiFine :)"
+    ],
+    "contact": {
+        "homepage": "https://github.com/AngerVon2468/Opti-FinallyGood",
+        "issues": "https://github.com/AngerVon2468/Opti-FinallyGood/issues",
+        "sources": "https://github.com/AngerVon2468/Opti-FinallyGood"
+    },
+    "license": "",
+    "icon": "assets/opti-finallygood/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "wiiu.mavity.optifinallygood.Opti_FinallyGoodClient"
+        ],
+        "main": [
+            "wiiu.mavity.optifinallygood.Opti_FinallyGood"
+        ]
+    },
+    "mixins": [
+        "opti-finallygood.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": "*",
+        "fabric": "*",
+        "minecraft": "~${minecraft_version}"
+    }
+}
