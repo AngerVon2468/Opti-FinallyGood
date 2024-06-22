@@ -55,14 +55,45 @@ dependencies {
     modImplementation "curse.maven:entity-model-features-844662:5304274"
     include "curse.maven:entity-model-features-844662:5304274"
 
-    modImplementation "maven.modrinth:entityculling:1.6.6"
-    include "maven.modrinth:entityculling:1.6.6"
-
     modImplementation "org.embeddedt:embeddium-fabric-1.20.1:0.3.21-git-a4a009a+mc1.20.1"
     include "org.embeddedt:embeddium-fabric-1.20.1:0.3.21-git-a4a009a+mc1.20.1"
 
+    modImplementation "curse.maven:modernfix-790626:5425646"
+    include "curse.maven:modernfix-790626:5425646"
+
+    modImplementation "curse.maven:ferritecore-fabric-459857:4810977"
+    include "curse.maven:ferritecore-fabric-459857:4810977"
+
+    modImplementation "curse.maven:no-chat-reports-634062:4610472"
+    include "curse.maven:no-chat-reports-634062:4610472"
+
     modImplementation "curse.maven:modmenu-308702:5162837"
     include "curse.maven:modmenu-308702:5162837"
+
+    // 'optional' extras, will make two releases based on if these mods are wanted or not. (Only optional mods should be implemented below this point).
+    modImplementation "curse.maven:better-third-person-435044:4596636"
+    include "curse.maven:better-third-person-435044:4596636"
+
+    modImplementation "curse.maven:jade-324717:5339230"
+    include "curse.maven:jade-324717:5339230"
+
+    modImplementation "curse.maven:jade-addons-fabric-656665:5288990"
+    include "curse.maven:jade-addons-fabric-656665:5288990"
+
+    modImplementation "curse.maven:jei-238222:5419573"
+    include "curse.maven:jei-238222:5419573"
+
+    modImplementation "curse.maven:appleskin-248787:4770825"
+    include "curse.maven:appleskin-248787:4770825"
+
+    modImplementation "curse.maven:controlling-250398:4646681"
+    include "curse.maven:controlling-250398:4646681"
+
+    modImplementation "curse.maven:chat-heads-407206:5423056"
+    include "curse.maven:chat-heads-407206:5423056"
+
+    modImplementation "curse.maven:searchables-858542:5284014"
+    include "curse.maven:searchables-858542:5284014"
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
