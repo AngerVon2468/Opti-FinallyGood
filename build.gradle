@@ -37,6 +37,18 @@ dependencies {
     modImplementation "curse.maven:embeddium-908741:5456713"
     include "curse.maven:embeddium-908741:5456713"
 
+    modImplementation "curse.maven:irisshaders-455508:5425378"
+    include "curse.maven:irisshaders-455508:5425378"
+
+    modImplementation "curse.maven:continuity-531351:5344958"
+    include "curse.maven:continuity-531351:5344958"
+
+    modImplementation "curse.maven:indium-459496:5436380"
+    include "curse.maven:indium-459496:5436380"
+
+    modImplementation "curse.maven:entity-texture-features-fabric-568563:5427048"
+    include "curse.maven:entity-texture-features-fabric-568563:5427048"
+
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
