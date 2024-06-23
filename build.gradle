@@ -64,6 +64,9 @@ dependencies {
     modImplementation "curse.maven:konkrete-fabric-416797:5142502"
     include "curse.maven:konkrete-fabric-416797:5142502"
 
+    modImplementation "curse.maven:animatica-533006:4600415"
+    include "curse.maven:animatica-533006:4600415"
+
     // Mods less for performance, more for QOL
     modImplementation "curse.maven:better-third-person-435044:4596636"
     include "curse.maven:better-third-person-435044:4596636"
