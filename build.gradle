@@ -128,6 +128,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
+    // Only works if the Java version is Java 17 or higher, to avoid issues.
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     if (JavaVersion.current() < javaVersion) {
         throw new RuntimeException("Opti-FinallyGood needs Java 17 or above. Current Java version is " + JavaVersion.current())
